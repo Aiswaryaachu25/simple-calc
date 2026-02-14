@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            simple calculator
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        body{
+            font-size:xx-large;
+            padding: 5cm;
+            background-color: antiquewhite;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+           color: brown;
+        }
+       
+        input{
+            
+            border-radius: 440cm;
+            width: 400px;
+            height: 2cm;
+            
+        }
+         button {
+            
+            border-radius: 40cm;
+            width: 150px;
+            height: 2cm;
+          
+        }
+        div{
+            display:flex;
+            gap: 10px;
+            justify-content: center;
+
+        }
+    </style>
+    <body>
+        <center>
+        <h1>CALCULATOR</h1>
+        <input type="text" id="num1" placeholder="enter first number"><br><br>
+        <input type="text" id="num2" placeholder="enter second number"><br><br>
+        <div class="div">
+            <button onclick="showsum()">+</button><br><br>
+        <button onclick="showsub()">-</button><br><br>
+        <button onclick="showmul()">X</button><br><br>
+        <button onclick="showdiv()">/</button><br><br>
+    </div>
+    
+    <script>
+        function showsum()
+        {
+            let sum=parseInt(document.getElementById("num1").value)+parseInt(document.getElementById("num2").value)
+            alert("sum is ;"+sum);
+        }
+         function showsub()
+        {
+            let sub=parseInt(document.getElementById("num1").value)-parseInt(document.getElementById("num2").value)
+            alert("difference is ;"+sub);
+        }
+         function showmul()
+        {
+            let mul=parseInt(document.getElementById("num1").value)*parseInt(document.getElementById("num2").value)
+            alert("product is ;"+mul);
+        }
+         function showdiv()
+        {
+            let div=parseInt(document.getElementById("num1").value)/parseInt(document.getElementById("num2").value)
+            alert("quotient is ;"+div);
+        }
+    </script>
+    </center>
+    </body>
+</html> 
